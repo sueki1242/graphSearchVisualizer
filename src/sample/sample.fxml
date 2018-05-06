@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.121" fx:controller="sample.Controller">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <top>
+                <MenuBar BorderPane.alignment="CENTER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Graph Type">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Sample1"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Query Type">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="BFS" fx:id="bfs"/>
+                            </items>
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="DFS" fx:id="dfs"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </top>
+            <center>
+                <Canvas fx:id="canvas" height="700.0" width="1000.0" BorderPane.alignment="CENTER"/>
+            </center>
+        </BorderPane>
+    </children>
+</GridPane>
